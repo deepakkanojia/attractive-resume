@@ -1,26 +1,77 @@
+/* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 150px 0;
-  }
-  
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  background-size: cover;
+  padding: 100px 0; /* Adjust padding for height */
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+/* Container for Centering Content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Heading */
+.display-4 {
+  font-size: 3.5rem; /* Large font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation-duration: 1s; /* Animation speed */
+}
+
+/* Subheading */
+.lead {
+  font-size: 1.5rem; /* Medium font size */
+  margin-bottom: 40px;
+  animation-duration: 1.2s; /* Animation speed */
+}
+
+/* Learn More Button */
+.btn-primary {
+  background-color: #ff6f61; /* Coral accent color */
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation-duration: 1.5s; /* Animation speed */
+}
+
+.btn-primary:hover {
+  background-color: #e65a50; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Animation for Button */
+.btn-primary.animate__animated {
+  animation-delay: 0.5s; /* Delay animation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .display-4 {
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 2.5rem; /* Smaller font size for mobile */
   }
-  
+
   .lead {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.2rem; /* Smaller font size for mobile */
   }
-  
+
   .btn-primary {
-    background-color: #ff6f61;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Smaller font size for mobile */
+    padding: 10px 25px;
   }
-  
   .btn-primary:hover {
-    background-color: #e65a50;
+    animation: none; /* Stop animation on hover */
+    background-color: #1a5bbf; /* Darker blue */
+    transform: scale(1.1); /* Slightly enlarge */
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
+}
