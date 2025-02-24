@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
-  imports: [NgFor, CommonModule],
+  imports: [CommonModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })

@@ -1,0 +1,90 @@
+/* Timeline Section */
+.timeline-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  /* Timeline Line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #2575fc; /* Blue accent color */
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  /* Timeline Item Alignment */
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  
+  /* Timeline Icon */
+  .timeline-icon {
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2575fc; /* Blue accent color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-icon {
+    right: -25px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-icon {
+    left: -25px;
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Timeline Heading */
+  .timeline-content h3 {
+    color: #2575fc; /* Blue accent color */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .timeline-content h5 {
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content p {
+    color: #444;
+    font-size: 1rem;
+  }

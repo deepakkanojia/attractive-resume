@@ -1,0 +1,16 @@
+<section class="timeline-section">
+    <h2 class="text-center mb-5 animate__animated animate__fadeIn">My Journey</h2>
+    <div class="timeline">
+      <div *ngFor="let event of timeline" class="timeline-item animate__animated animate__fadeInUp">
+        <div class="timeline-icon">
+          <i [class]="event.icon"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>{{ event.title }}</h3>
+          <h5>{{ event.company }}</h5>
+          <p class="text-muted">{{ event.year }}</p>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

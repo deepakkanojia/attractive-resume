@@ -1,6 +1,6 @@
 <section class="container my-5">
     <h2 class="text-center mb-4">Skills</h2>
-    <div *ngFor="let skill of skills" class="mb-3">
+    <div *ngFor="let skill of skills" class="mb-3 animate__animated animate__fadeIn">
       <label>{{ skill.name }}</label>
       <div class="progress">
         <div class="progress-bar" [ngStyle]="{ 'width.%': skill.level }">
