@@ -1,0 +1,11 @@
+<section class="container my-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div *ngFor="let skill of skills" class="mb-3">
+      <label>{{ skill.name }}</label>
+      <div class="progress">
+        <div class="progress-bar" [ngStyle]="{ 'width.%': skill.level }">
+          {{ skill.level }}%
+        </div>
+      </div>
+    </div>
+  </section>
